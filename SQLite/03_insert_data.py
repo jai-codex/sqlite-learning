@@ -3,9 +3,12 @@ import sqlite3
 conn = sqlite3.connect("Hackthon.db")
 cursor = conn.cursor()
 
-cursor.execute(
+cursor.executemany(
     "INSERT INTO users(name, age) VALUES(?, ?)",
-    ("Jai", 19))
+    [
+    ("Jai", 19),
+    ("Rahul", 20),
+    ("Amit", 19)])
 
 conn.commit()
 conn.close()
