@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("Hackthon.db")
+connection = sqlite3.connect("hackathon.db")
 cursor = connection.cursor()
 
 cursor.execute(

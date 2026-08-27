@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("Hackthon.db")
+conn = sqlite3.connect("hackathon.db")
 cursor = conn.cursor()
 
 cursor.execute(
@@ -22,5 +22,5 @@ print("Maximum Age", cursor.fetchone()[0])
 cursor.execute(
     "SELECT SUM(age) FROM users")
 print("Sum of Age:", cursor.fetchone()[0])
-    
+
 conn.close()

@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("Hackthon.db")
+conn = sqlite3.connect("hackathon.db")
 
 print("Database created successfully!")
 

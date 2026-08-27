@@ -1,10 +1,10 @@
 import sqlite3
 
-conn = sqlite3.connect("Hackthon.db")
+conn = sqlite3.connect("hackathon.db")
 cursor = conn.cursor()
 
 cursor.execute(
-    "SELECT * FROM users")
+    "SELECT  FROM users")
 
 users = cursor.fetchall()
 
