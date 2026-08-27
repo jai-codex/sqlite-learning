@@ -8,7 +8,14 @@ cursor.executemany(
     [
     ("Jai", 19),
     ("Rahul", 20),
-    ("Amit", 19)])
+    ("Amit", 19),
+    ("Rohan", 21),
+    ("Arjun", 18),
+    ("Vikram", 22),
+    ("Aditya", 20),
+    ("Karan", 19),
+    ("Sahil", 21),
+    ("Neeraj", 18)])
 
 conn.commit()
 conn.close()
