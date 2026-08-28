@@ -11,6 +11,11 @@ cursor.execute(
     "INSERT OR IGNORE INTO farmers (name) VALUES(?)",
     ("Shree",))
 
+
+cursor.execute(
+    "INSERT OR IGNORE INTO farmers (name) VALUES(?)",
+    ("Gopi",))
+
 cursor.execute(
     "INSERT OR IGNORE INTO crops (crop_name, farmer_id) VALUES (?, ?)",
     ("Wheat", 1)
@@ -24,6 +29,11 @@ cursor.execute(
 cursor.execute(
     "INSERT OR IGNORE INTO crops (crop_name, farmer_id) VALUES (?, ?)",
     ("Tomato", 2)
+)
+
+cursor.execute(
+    "INSERT OR IGNORE INTO crops (crop_name, farmer_id) VALUES (?, ?)",
+    ("Potato", "")
 )
 
 conn.commit()
