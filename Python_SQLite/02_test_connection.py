@@ -2,6 +2,6 @@ from database import get_connection
 
 conn = get_connection()
 
-print(conn)
+print("Database connected successfully!")
 
 conn.close()
