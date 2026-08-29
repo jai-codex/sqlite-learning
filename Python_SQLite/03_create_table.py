@@ -4,7 +4,7 @@ conn = get_connection()
 cursor = conn.cursor()
 
 cursor.execute(
-    """CREATE TABLE IF NOT EXISTS framers(
+    """CREATE TABLE IF NOT EXISTS farmers(
     ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Name TEXT NOT NULL,
     phone TEXT UNIQUE NOT NULL)""")
